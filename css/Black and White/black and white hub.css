@@ -1,0 +1,605 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --trans: transparent;
+  --link: #3f3e3e;
+}
+
+* {
+  font-family: "Shizuru", cursive;
+}
+a {
+  color: var(--white) !important;
+}
+
+/*stuff*/
+#aHolder,
+#androidDB,
+#iosDB,
+#steamDB,
+#backImgHoldr,
+#hubBox,
+.onStatus,
+.terms[style="color:#fff !important;"] {
+  display: none !important;
+}
+
+/*navbar*/
+
+#navBar {
+  color: #fff;
+  background-color: var(--black);
+  width: 100%;
+  height: 85px;
+}
+
+/*login*/
+#profileLogin,
+#searchBtn {
+  box-shadow: -1px 1px var(--white), -2px 2px var(--white),
+    -3px 3px var(--white), -4px 4px var(--white), -5px 5px var(--white);
+  background: var(--black);
+  transform: translate(5px, -5px);
+  border: 4px solid var(--white);
+  transition: 0.2s;
+}
+#profileLogin:hover,
+#searchBtn:hover {
+  border: 4px solid var(--white) !important;
+  color: var(--white) !important;
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+#searchPInput {
+  padding: 4px;
+  width: 200px;
+  text-align: left;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 4px solid var(--white);
+  background-color: var(--black);
+  transition: 0.5s;
+}
+
+#searchPInput:focus {
+  color: var(--white);
+  padding-left: 20px;
+}
+
+#searchPInput::placeholder {
+  color: var(--white);
+}
+
+#loginPop {
+  color: #fff;
+  background-color: var(--black);
+  box-shadow: 0 0 black;
+  border: 4px solid var(--white);
+}
+.accountInput,
+.accPass {
+  border: 4px solid var(--white);
+  background-color: var(--black);
+  color: var(--white);
+}
+#accResp {
+  color: var(--white) !important;
+}
+.accBtn {
+  border: 4px solid var(--white) !important;
+  box-shadow: -1px 1px var(--white), -2px 2px var(--white),
+    -3px 3px var(--white), -4px 4px var(--white), -5px 5px var(--white);
+  transform: translate(5px, -5px);
+}
+.accBtn:hover {
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+
+/*nav profile*/
+
+#profileImg {
+  filter: grayscale(1);
+  border: 4px solid var(--white) !important;
+  transition: 0.2s;
+}
+#profileInfo {
+  display: flex;
+}
+.material-icons.mic1:hover {
+  transform: translate(0, 10px);
+}
+#navButtons,
+#navButtons div {
+  width: max-content;
+  opacity: 1 !important;
+}
+#navButtons #feed,
+#navButtons #market,
+#navButtons #leaders,
+#navButtons #maps,
+#navButtons #mods,
+#navButtons #items {
+  font-size: 0px !important;
+  margin-top: 0 !important;
+  margin-right: 30px !important;
+}
+#navButtons div:after {
+  font-size: 20px;
+  color: var(--white) !important;
+  font-family: "Shizuru", cursive;
+}
+#navButtons #feed:after {
+  content: "Social";
+}
+#navButtons #market:after {
+  content: "Store";
+}
+#navButtons #leaders:after {
+  content: "LeaderBoard";
+}
+#navButtons #mods:after {
+  content: "Mods";
+}
+#navButtons #items:after {
+  content: "Items";
+}
+
+/*nav right*/
+#navTitle {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+.terms[onclick="openURL('./docs/terms.txt')"] {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  font-size: 0px;
+}
+.terms[onclick="openURL('./docs/terms.txt')"]:hover {
+  text-decoration: none;
+}
+.terms[onclick="openURL('./docs/terms.txt')"]:after {
+  content: "A Css created by TrnLinh";
+  font-size: 20px;
+  color: var(--white);
+}
+.terms[style="font-size: 35px;margin-top: 14px;color: #fff;"] {
+  margin-top: 10px !important;
+}
+div[style="display:inline-block; color:#fff;"]:hover {
+  transform: scale(0.95);
+}
+
+/*setting*/
+#settingsPop {
+  background-color: var(--black);
+  border: 4px solid var(--white);
+  width: 800px;
+  height: 100%;
+  max-height: 500px;
+  box-shadow: 0 0 black;
+}
+.settName,
+.settNameSmall {
+  margin-top: 20px;
+  color: var(--white) !important;
+}
+.inputGrey2 {
+  background: var(--black);
+  border: 4px solid var(--white);
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: var(--white) !important;
+}
+input:checked + .slider {
+  background-color: var(--black);
+}
+input[type="range"]::-webkit-slider-thumb {
+  width: 18px;
+  height: 35px;
+  background: var(--white);
+  border: 4px solid var(--black);
+}
+.sliderVal {
+  color: var(--black);
+  background: var(--white);
+}
+.openCollection {
+  background-color: var(--black) !important;
+}
+div[style="background-color: #994cd1!important;font-size: 17px;padding: 5px;border-radius: 4px;text-align: center;margin-top: 10px;color: rgba(255, 255, 255, 1) !important;"] {
+  margin-top: 50px !important;
+  box-shadow: 1px 1px var(--white), 2px 2px var(--white), 3px 3px var(--white),
+    4px 4px var(--white), 5px 5px var(--white);
+  filter: grayscale(1);
+  transform: translate(-5px, -5px);
+  transition: 0.2s;
+}
+div[style="background-color: #994cd1!important;font-size: 17px;padding: 5px;border-radius: 4px;text-align: center;margin-top: 10px;color: rgba(255, 255, 255, 1) !important;"]:hover {
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+
+/*left bar*/
+#chatScroller {
+  background-color: var(--black);
+  border-right: 3px solid var(--link);
+}
+.chatBlobIcn {
+  background-color: var(--trans);
+  border: 4px solid var(--white);
+}
+.chatBlobImg {
+  border: 4px solid var(--white);
+  filter: grayscale(1);
+  background-color: var(--trans);
+}
+/* feed bar */
+.feedTab:hover,
+.feedTabA {
+  border-bottom: 0px solid rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+}
+.feedTab:hover {
+  transform: translate(0, 10px);
+  box-shadow: 0 -10px var(--white);
+}
+
+/*feed*/
+#feedHolder {
+  bottom: 40px !important;
+}
+#postEntryC {
+  background-color: var(--black);
+  border: 4px solid var(--white);
+}
+#postInput {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border: 3px solid var(--white);
+  transition: 0.2s;
+}
+#postInput::placeholder {
+  color: var(--white);
+}
+#postInput:focus {
+  padding-left: 17px;
+}
+#postButton {
+  border: 4px solid var(--white);
+  background-color: #000000;
+  transform: translate(-5px, -5px);
+  box-shadow: 1px 1px var(--white), 2px 2px var(--white), 3px 3px var(--white),
+    4px 4px var(--white), 5px 5px var(--white);
+  transition: 0.2s;
+}
+#postButton:hover {
+  opacity: 1;
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+.socPost,
+.postContent {
+  border: 4px solid var(--white);
+  background-color: var(--trans);
+}
+.postTime,
+.postContent,
+.postResRoD {
+  color: var(--white);
+}
+.shareBtnHol {
+  color: #fff;
+}
+.shareBtnHol {
+  border: 4px solid var(--white) !important;
+  box-shadow: -1px 1px var(--white), -2px 2px var(--white),
+    -3px 3px var(--white), -4px 4px var(--white), -5px 5px var(--white);
+  transform: translate(5px, -5px);
+  background-color: var(--black);
+  transition: 0.2s;
+}
+.shareBtnHol:hover {
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+.blueLink {
+  color: var(--link) !important;
+}
+
+/*store*/
+.bigMenTabs {
+  color: var(--black) !important;
+  background-color: var(--black);
+  border: 4px solid var(--white);
+  width: 99%;
+}
+.bigMenTabA {
+  cursor: default;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.9);
+}
+.bigMenTab {
+  font-size: 20px !important;
+  transition: 0.2s;
+  z-index: 0 !important;
+}
+.bigMenTab:hover {
+  border: 4px solid var(--white);
+  z-index: 1 !important;
+  box-shadow: 10px 10px var(--white);
+  transform: translate(-10px, -10px);
+  background-color: var(--black);
+}
+#marketSearchB {
+  background-color: var(--black) !important;
+}
+.bigMenTab img {
+  filter: brightness(10);
+}
+
+/*store list*/
+.marketCard {
+  color: white !important;
+}
+
+.marketCard[style="color:#292929;border:5px solid #292929"] {
+  background-color: #292929;
+}
+.marketCard[style="color:#ed4242;border:5px solid #ed4242"] {
+  background-color: #ed4242;
+}
+.marketCard[style="color:#FBC02D;border:5px solid #FBC02D"] {
+  background-color: #fbc02d;
+}
+.marketCard[style="color:#2196F3;border:5px solid #2196F3"] {
+  background-color: #2196f3;
+}
+.marketCard[style="color:#E040FB;border:5px solid #E040FB"] {
+  background-color: #e040fb;
+}
+.marketCard[style="color:#b2f252;border:5px solid #b2f252"] {
+  background-color: #b2f252;
+}
+.marketCard[style="color:#f3b8ff;border:5px solid #f3b8ff"] {
+  background-color: #f3b8ff;
+}
+.marketCard[style="color:#fff53d;border:5px solid #fff53d"] {
+  animation: rainbowB 1s linear infinite, rainbowBG 1s linear infinite;
+}
+/*rarity*/
+
+.rareItems,
+.scrollItem {
+  background-color: var(--black);
+  border: 4px solid var(--white);
+}
+#itemsListNav > select {
+  background-color: #000000;
+  border: 4px solid var(--white);
+  color: var(--white);
+}
+#itemsListNav > input {
+  padding: 10px;
+  border: 4px solid var(--white);
+  background-color: var(--black);
+  transition: 0.5s;
+}
+#itemsListNav > input:focus {
+  color: var(--white);
+  padding-left: 20px;
+}
+div[onclick="SOUND.play(`select_0`,0.15);publishModPopup(true)"] {
+  filter: grayscale(1);
+}
+
+/*mods*/
+#bigMFeatHBtn span {
+  color: var(--white) !important;
+}
+
+.bigMFeatHold {
+  border: 4px solid var(--white) !important;
+  background: var(--black) !important;
+}
+.bigMFeatHold #bigMFeatPBtn,
+.bigMFeatHold #bigMFeatHBtn {
+  border: 4px solid var(--white) !important;
+  box-shadow: 1px 1px var(--white), 2px 2px var(--white), 3px 3px var(--white),
+    4px 4px var(--white), 5px 5px var(--white), 6px 6px var(--white),
+    7px 7px var(--white), 8px 8px var(--white), 9px 9px var(--white),
+    10px 10px var(--white);
+  -webkit-transform: scale(1);
+  transform: translate(-10px, -10px);
+  background: var(--black);
+  color: var(--white) !important;
+}
+#bigMFeatPBtn:hover,
+.bigMFeatHold #bigMFeatHBtn:hover {
+  transform: translate(0px, 0px);
+  box-shadow: 0 0 black;
+}
+
+.mapListCat {
+  background: var(--black);
+}
+.mapListItem {
+  color: var(--black) !important;
+  border: 3px solid var(--black);
+  background-color: var(--white);
+  transition: 0.3s;
+}
+.mapListItem:hover .mapActionOvrl {
+  z-index: 9999999999;
+  opacity: 0;
+}
+.mapListItem:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+
+.mapListItem div span {
+  color: var(--black) !important;
+}
+#mdSrch {
+  color: var(--white) !important;
+  background-color: var(--trans);
+  border: 4px solid var(--black);
+  transition: 0.2s;
+}
+#mdSrch::placeholder {
+  color: var(--black);
+}
+#mdSrch:focus {
+  background: var(--black);
+  padding-left: 50px;
+}
+#mdSrch:focus::placeholder {
+  color: var(--white);
+}
+.searchBtn {
+  background-color: var(--white);
+  border: 4px inset var(--black);
+  height: 65px;
+  transform: translate(-10px, -10px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+  transition: 0.3s;
+}
+.searchBtn:hover {
+  box-shadow: 0 0 black;
+  transform: translate(0);
+}
+
+/*profile*/
+.scrollItemNew {
+  border: 4px solid var(--white);
+  margin-bottom: 20px;
+  background-color: var(--black);
+  box-shadow: 0 0 black;
+  padding: 15px;
+}
+
+#leftProfile img {
+  opacity: 0;
+}
+#leftProfile {
+  background: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+#socialFlag {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  transform: scale(1);
+  image-rendering: auto;
+  border-radius: 8px;
+}
+.leftTopHolder,
+.leftMidHolder,
+.leftBottomHolder {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 160px;
+  color: var(--white) !important;
+}
+#nameSwitch {
+  color: var(--white);
+}
+
+.leftMidHolder {
+  top: 50%;
+  font-size: 16px;
+}
+.leftBottomHolder {
+  top: initial;
+  font-size: 16px;
+}
+#reprtBtn,
+#shareBtn {
+  color: var(--white) !important;
+}
+#twitchBtn {
+  filter: brightness(1.8);
+}
+.bottomBtn {
+  border: 3px solid var(--white) !important;
+  transition: all 0.2s;
+  color: var(--white) !important;
+}
+.bottomBtn:hover {
+  box-shadow: 5px 5px var(--white);
+  transform: translate(-5px, -5px);
+  filter: contrast(1);
+}
+
+/*profile nav*/
+.profileTabs {
+  background-color: var(--black);
+  border: 4px solid var(--white);
+  width: 99%;
+}
+.pTabA {
+  cursor: default;
+  box-shadow: 0 0 black;
+}
+.profileTab {
+  background-color: var(--black);
+  transition: 0.2s;
+}
+.profileTab:hover {
+  box-shadow: 7px 7px var(--white);
+  transform: translate(-7px, -7px);
+  border: 3px solid var(--white);
+}
+.scrollItemHead {
+  color: var(--white);
+}
+.xpBar {
+  background-color: var(--white);
+  margin-top: 40px;
+}
+.xpBarB {
+  height: 100%;
+  background: var(--black);
+}
+.xpBarV {
+  text-shadow: 0 0 0 var(--black), 1px 0 0 var(--black), -1px 0 var(--black),
+    0 -1px var(--black), 0 1px var(--black), 1px 1px var(--black),
+    1px -1px var(--black), -1px 1px var(--black), -1px -1px var(--black),
+    0 2px var(--black), 0 -2px var(--black), 2px 0 var(--black),
+    -2px 0 var(--black), 1px 2px var(--black), -1px 2px var(--black),
+    1px -2px var(--black), -1px -2px var(--black), 2px 2px var(--black),
+    -2px 2px var(--black), 2px -2px var(--black), -2px -2px var(--black),
+    0 0 2px var(--black), 0 0 2px var(--black), 0 0 2px var(--black);
+}
+#skinList {
+  margin-top: 15px;
+}
+.classXPBar {
+  background-color: var(--white);
+}
+.clsXPBarC {
+  background-color: var(--black);
+}
+.classImg {
+  background-color: rgb(255 255 255 / 0%);
+}
+div[style="margin-top:10px;margin-left: 8px;"] {
+  margin-top: 20px !important;
+}
+.graphHeader {
+  font-size: 20px;
+  color: var(--white);
+  background-color: var(--black);
+  border: 4px solid var(--white);
+}

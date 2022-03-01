@@ -1,0 +1,1736 @@
+:root {
+  --black: #000000;
+  --white: white;
+  --trans: transparent;
+  --link: #3f3e3e;
+}
+
+* {
+  font-family: "Shizuru", cursive;
+}
+a {
+  color: var(--link) !important;
+}
+
+/*loading screen*/
+#loadTipsHolder,
+#lC-img,
+#loadGamNm,
+#aHolder,
+#loadEditrBtn,
+.lC-l,
+.lC-t,
+#lC-img,
+.lC-b,
+.lC-bt,
+#bubbleContainer,
+.lC-r,
+#loadInfoLHolder {
+  display: none !important;
+}
+#initLoader {
+  background: var(--white);
+}
+.lC-sides {
+  animation: initial;
+  transform-style: preserve-3d;
+  transform: initial;
+}
+#lC-cont {
+  display: block;
+  width: 300px;
+}
+
+#lC-cont:before {
+  content: "Loading...";
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  width: 100%;
+  text-align: left;
+}
+.lC-cube,
+.lC-cube * {
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  margin: 0;
+}
+
+.lC-cube {
+  transform: translate(0, 0);
+  border: 2px inset var(--black);
+  margin: 0;
+}
+#loadInfoRHolder {
+  font-size: 0px;
+}
+#loadInfoRHolder:before {
+  content: "A Css created by TrnLinh";
+  font-size: 20px;
+  color: var(--black);
+}
+
+.lC-f {
+  animation: loader 10s ease forwards;
+  background: black;
+  color: #fff;
+  padding: 0px;
+  margin: 0;
+  width: 0;
+}
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+
+  20% {
+    width: 10%;
+  }
+
+  25% {
+    width: 24%;
+  }
+
+  43% {
+    width: 41%;
+  }
+
+  56% {
+    width: 50%;
+  }
+
+  66% {
+    width: 52%;
+  }
+
+  71% {
+    width: 60%;
+  }
+
+  75% {
+    width: 76%;
+  }
+
+  94% {
+    width: 86%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*stuff*/
+#clientExit,
+#aMerger,
+.verticalSeparator,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+.segSugIH,
+#menuClassNameTag,
+#onetrust-consent-sdk,
+#pingIcon,
+.weapKey,
+#aHolder,
+#killFeed,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.selctFavBtn,
+.selctInfoBtn,
+.itemCnt[data-badge]:after,
+.countIcon img,
+.krSocial,
+#policeButton,
+.verticalSeparatorInline,
+.challHeadrBlck,
+#victorySub,
+.terms,
+#mailCount,
+#voiceDisplay,
+#mapActionOvrl,
+#bubbleContainer,
+#menuClassSubtext,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.tooltip,
+.settingsBtn[onclick="openOneTrust()"],
+#menuAccountUsername,
+.menuSocialB,
+#mainLogo,
+.pfpAction {
+  display: none !important;
+}
+/*profile*/
+/*credit go to Abyy#9768*/
+#windowHolder {
+  opacity: 0;
+  background-color: #ffffff94 !important;
+  transition: transform 1s, opacity 1s, background-color 2s;
+  transform: translateX(-100%);
+  display: inline-block !important;
+}
+
+#windowHolder[style*="block"] {
+  opacity: 1;
+  transition: transform 1s, opacity 0s;
+  transform: translateX(0);
+}
+
+#menuWindow {
+  border-radius: 6px;
+  border: 5px solid var(--black);
+  background-color: var(--white) !important;
+}
+#menuWindow[style="overflow-y: auto; width: 1280px;"] {
+  transform: initial;
+  width: 800px !important;
+  max-height: 100% !important;
+  height: 95% !important;
+  left: 0px;
+  top: 0;
+}
+#menuWindow.dark div {
+  color: var(--black);
+}
+.bigMenTabs {
+  color: var(--black) !important;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+.bigMenTab {
+  font-size: 20px !important;
+  transition: 0.2s;
+  z-index: 0 !important;
+}
+.bigMenTab:hover {
+  border: 4px inset var(--black);
+  z-index: 1 !important;
+  box-shadow: 7px 7px rgb(0 0 0);
+  transform: translate(-10px, -10px);
+  background-color: var(--white);
+}
+.material-icons,
+.settName a,
+.settName span,
+.material-icons-outlined {
+  color: var(--black) !important;
+}
+.setHed:hover,
+.button,
+#referralHeader,
+#signedOutHeaderBar {
+  background-color: var(--trans);
+}
+.setHed {
+  background-color: var(--trans);
+  border-bottom: 5px solid var(--black);
+}
+#profilePicM {
+  border: 4px solid var(--black) !important;
+  width: 300px;
+  height: 300px;
+  background: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blurred {
+  filter: grayscale(0) opacity(1);
+  image-rendering: auto !important;
+}
+#profilePicM > img {
+  opacity: 0;
+}
+.setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:1004px;margin-left:15px;margin-top:0px;"] {
+  width: 50% !important;
+  height: 300px;
+  background-color: var(--trans);
+}
+.settName {
+  font-size: 30px;
+  margin-top: 35px !important;
+  font-weight: 600;
+  color: var(--black) !important;
+}
+.settName a:hover {
+  color: var(--gray) !important;
+}
+
+.xpBar {
+  border: 4px solid var(--black);
+  background-color: var(--trans);
+  padding: 0px;
+}
+.xpBarB {
+  background: var(--black);
+}
+.xpBarV {
+  display: none;
+}
+.pSt {
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid var(--black);
+  background-color: var(--trans);
+  text-shadow: 0 0 black !important;
+  width: 45% !important;
+}
+.pSt strong {
+  color: var(--gray);
+}
+#menuWindow
+  div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"] {
+  display: none;
+}
+/* menu*/
+#signedOutHeaderBar .buttonO {
+  border: 4px solid var(--black) !important;
+  background-color: var(--white);
+  color: var(--black);
+}
+#signedOutHeaderBar .button:hover {
+  color: black !important;
+  transform: initial;
+  transform: translate(20px, 0px) !important;
+  box-shadow: -10px 0px;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: var(--white) !important;
+  color: -internal-light-dark(var(--black), var(--white)) !important;
+}
+.accountInput {
+  color: var(--black) !important;
+  border: 4px solid var(--black);
+}
+.setBodH[style="margin-left:0px;width:calc(100% - 40px)"] {
+  background-color: var(--trans);
+}
+#accResp,
+#accResp span {
+  color: var(--black) !important;
+}
+#menuWindow
+  div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"] {
+  background-color: var(--trans) !important;
+}
+
+#menuWindow
+  div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"]
+  .buttonP,
+#menuWindow
+  div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"]
+  .buttonG {
+  border: 4px solid var(--black) !important;
+  transform: translate(-10px, -10px);
+  box-shadow: 7px 7px var(--black);
+}
+#menuWindow
+  div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"]
+  .buttonP:hover,
+#menuWindow
+  div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"]
+  .buttonG:hover {
+  color: var(--black) !important;
+  transform: initial;
+  box-shadow: 0px 0px var(--black);
+}
+
+/*Top left bar*/
+.headerBar {
+  height: max-content;
+}
+#signedInHeaderBar {
+  border-radius: 0 !important;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+#signedInHeaderBar div {
+  color: black;
+}
+.headerBar {
+  align-items: flex-end;
+}
+#signedInHeaderBar > div[style="display:inline-block;"] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#menuUsernameContainer {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-size: cover;
+  background-image: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+#menuUsernameContainer > img {
+  opacity: 0;
+}
+#menuMiniProfilePic {
+  vertical-align: top;
+  display: block;
+  width: 100px;
+  height: 100px;
+  image-rendering: optimizequality !important;
+  margin-right: 1px;
+  border-radius: 50%;
+}
+
+.krInfo {
+  margin-top: 0px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.junkInfo {
+  margin-top: 0px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.progressBar {
+  width: 100%;
+  background: var(--trans);
+  border: 4px solid var(--black);
+  border-radius: 0px;
+  grid-column: 2/4;
+  grid-row: 3/4;
+  padding: 0;
+}
+.progressBarInner {
+  height: 100%;
+  background: var(--black);
+  transition: width 1s ease-in-out;
+  border-radius: 0px;
+}
+#mailContainer {
+  grid-column: 2/3;
+  display: flex;
+  grid-row: 1/3;
+  justify-content: flex-end;
+}
+
+#menuKRCount span {
+  color: var(--black) !important;
+}
+
+#mLevelCont {
+  background-color: var(--trans);
+  padding-left: 0px;
+  padding-bottom: 12px;
+}
+#mLevelContV {
+  font-size: 55px;
+}
+
+.headerBarRight {
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  border-radius: 0 0 0 0px;
+  border: 4px solid var(--black);
+  background-color: var(--white);
+}
+.headerBar div,
+#menuPingDisplay,
+#menuFPSDisplay,
+#menuPingText {
+  color: #000;
+}
+/*main bar*/
+
+#menuItemContainer {
+  top: initial;
+  left: 50px;
+  bottom: 20px;
+  width: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  background: var(--trans);
+  height: max-content;
+}
+.menuItem {
+  margin-right: 30px;
+  background-color: var(--white);
+  padding: 10px 20px;
+  flex-direction: row;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px var(--black), -2px 2px var(--black),
+    -3px 3px var(--black), -4px 4px var(--black), -5px 5px var(--black),
+    -6px 6px var(--black), -7px 7px var(--black), -8px 8px var(--black),
+    -9px 9px var(--black), -10px 10px var(--black);
+}
+
+.menuItem:hover {
+  transform: translate(0);
+  box-shadow: 0px 0px var(--black);
+}
+.menuItem .menuItemTitle {
+  margin-top: 0px;
+  color: var(--black);
+  font-size: 0px !important;
+}
+.menuItem:hover .menBtnIcn {
+  transform: scale(1);
+  color: var(--black) !important;
+}
+
+.menuItem #menuBtnProfile:after {
+  content: "Account";
+  font-size: 25px !important;
+}
+
+.menuItem #menuBtnShop:after {
+  content: "Shop";
+  font-size: 25px !important;
+}
+
+.menuItem #menuBtnChall:after {
+  content: "Challenge";
+  font-size: 25px !important;
+}
+.menuItem #menuBtnSocial:after {
+  content: "Social";
+  font-size: 25px !important;
+}
+
+.menuItem #menuBtnMaps:after {
+  content: "Games";
+  font-size: 25px !important;
+}
+
+.menuItem #menuBtnMods:after {
+  content: "Mods";
+  font-size: 25px !important;
+}
+
+.menuItem #menuBtnSettings:after {
+  content: "Setting";
+  font-size: 25px !important;
+}
+
+/*semi bar*/
+#subLogoButtons {
+  bottom: 119px;
+  left: 30px;
+  transform: translate(0, 0) scale(0.95);
+}
+#subLogoButtons .button {
+  background: var(--white);
+  color: var(--black);
+  border: 0 !important;
+  box-shadow: -1px 1px var(--black), -2px 2px var(--black),
+    -3px 3px var(--black), -4px 4px var(--black), -5px 5px var(--black),
+    -6px 6px var(--black), -7px 7px var(--black), -8px 8px var(--black),
+    -9px 9px var(--black), -10px 10px var(--black);
+  transform: translate(10px, -10px);
+  margin-right: 30px;
+}
+#subLogoButtons .button:hover {
+  transform: scale(1);
+  color: var(--black) !important;
+  transform: translate(0px, 0px);
+  box-shadow: 0 0 black;
+}
+
+/*chat*/
+
+#chatHolder {
+  width: 336x;
+}
+#uiBase.onMenu #chatHolder {
+  left: 50px;
+  bottom: 220px;
+}
+
+@media screen and (max-height: 750px) {
+  #uiBase.onMenu #chatHolder {
+    left: 50px;
+    bottom: 30vh;
+  }
+}
+
+#chatInputHolder {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+#chatInput {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  transform: transform(20px, 20px);
+  transition: 0.5s;
+}
+#chatInput::placeholder,
+.chatItem,
+.chatMsg,
+.chatMsg span[style="color:#fff"] {
+  color: var(--black) !important;
+}
+
+#chatInput:focus {
+  background-color: var(--black);
+  border: 4px solid var(--black);
+  height: 100%;
+  padding: 8px 0px 8px 20px;
+}
+#chatInput:focus::placeholder {
+  color: white !important;
+}
+#chatList {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+.weaponChatIcon{
+    filter: drop-shadow( 1px 1px var(--black)) drop-shadow(1px 1px var(--black))
+}
+/*cusromize*/
+
+#menuClassContainer {
+  position: fixed;
+  right: 50px;
+  top: 25%;
+  width: 400px;
+  height: 550px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 5px solid var(--black);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+}
+#menuClassName {
+  margin-top: 110px;
+  text-shadow: 0 0 black;
+}
+.bigShadowT,
+.selectorLabel,
+.blackShad,
+#menuClassSubtext,
+.optName {
+  text-shadow: 0 0 black !important;
+}
+#menuClassName {
+  color: var(--black);
+}
+
+#customizeButton {
+  color: var(--black);
+  border: 4px solid var(--black) !important;
+  transform: translate(-10px, -10px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+}
+#customizeButton:hover {
+  transform: initial;
+  color: var(--black) !important;
+  transform: translate(0px, 0px);
+  box-shadow: 0 0 black;
+}
+.hostOpt {
+  background-color: var(--white);
+}
+.optName {
+  color: #878787;
+}
+.hostToggle {
+  background-color: var(--black);
+  color: var(--white) !important;
+}
+.settName,
+.settNameSmall {
+  color: var(--black) !important;
+}
+
+#startServBtn {
+  filter: grayscale(1);
+}
+/*term*/
+#termsInfo {
+  background-color: var(--trans);
+}
+#termsInfo:before {
+  content: "A Css created by TrnLinh";
+  color: var(--white);
+  font-size: 16px;
+}
+#mapInfo {
+  margin: 0px;
+}
+
+/* setting */
+.settingsHeader {
+  background-color: var(--white);
+}
+#settSearch {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  transition: 0.5s;
+}
+#settSearch:focus {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+.settingsBtn,
+.hostPresetBtn {
+  border: 4px solid var(--black);
+  background-color: var(--white);
+  transition: 0.2s;
+}
+.settingsBtn:hover,
+.hostPresetBtn:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+.inputGrey2 {
+  padding: 0;
+  border: 4px solid var(--black);
+  background: var(--white);
+  padding: 5px;
+}
+
+.settingTab {
+  border: 0 !important;
+  background-color: var(--white);
+  padding: 15px 0 15px;
+  transition: 0.3s;
+}
+#settingsTabLayout {
+  border: 4px solid var(--black);
+  background-color: var(--trans);
+}
+.dark .tabANew:hover {
+  border-bottom: 4px solid var(--black) !important;
+}
+.settingTab:hover {
+  border: 4px inset var(--black) !important;
+
+  z-index: 1 !important;
+  box-shadow: 7px 7px rgb(0 0 0);
+  transform: translate(-10px, -10px);
+  background-color: var(--white);
+}
+
+.setSugBox2 {
+  border: 4px solid var(--black);
+  background-color: var(--white);
+  transform: translate(-10px, -10px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+  transition: 0.2s;
+}
+
+.setSugBox2:hover {
+  opacity: 1;
+  border: 4px solid var(--black);
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+.setBodH {
+  background-color: var(--trans);
+}
+#requiresRestart {
+  color: var(--black);
+}
+.slider {
+  background-color: var(--link);
+}
+input:checked + .slider,
+input:checked + .slider2,
+input:checked + .optCheck {
+  background-color: var(--black);
+}
+
+.sliderVal {
+  color: var(--black);
+  border: 4px solid var(--black) !important;
+  background-color: var(--white);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 19px;
+  background: var(--white);
+  border: 4px solid var(--black);
+}
+input[type="color"] {
+  border: 4px solid var(--black);
+}
+/*mods*/
+
+#bigMFeatHBtn span {
+  color: var(--black) !important;
+}
+
+.bigMFeatHold {
+  border: 4px solid var(--black) !important;
+  background: var(--white) !important;
+}
+.bigMFeatHold #bigMFeatPBtn,
+.bigMFeatHold #bigMFeatHBtn {
+  border: 4px solid var(--black) !important;
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+  -webkit-transform: scale(1);
+  transform: translate(-10px, -10px);
+  background: var(--white);
+  color: var(--black) !important;
+}
+#bigMFeatPBtn:hover,
+.bigMFeatHold #bigMFeatHBtn:hover {
+  transform: translate(0px, 0px);
+  box-shadow: 0 0 black;
+}
+
+.mapListCat {
+  background: var(--white);
+}
+.mapListItem {
+  color: var(--black) !important;
+  border: 3px solid var(--black);
+  background-color: var(--white);
+  transition: 0.3s;
+}
+.mapListItem:hover .mapActionOvrl {
+  z-index: 9999999999;
+  opacity: 0;
+}
+.mapListItem:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+
+.mapListItem div span[style="font-size:15px;text-align:right;padding-right:2px;float:right;color:#fff;"],
+.mapListItem div span[style="font-size:15px;text-align:right;padding-right:2px;float:right;color:#fff;"] span{
+  color: var(--black) !important;
+}
+#mdSrch {
+  color: var(--white) !important;
+  background-color: var(--trans);
+  border: 4px solid var(--black);
+  transition: 0.2s;
+  width: calc(100% - 100px);
+}
+#mdSrch::placeholder {
+  color: var(--black);
+}
+#mdSrch:focus {
+  background: var(--black);
+  padding-left: 50px;
+}
+#mdSrch:focus::placeholder {
+  color: var(--white);
+}
+.searchBtn {
+  background-color: var(--white);
+  border: 4px inset var(--black);
+  height: 65px;
+  transform: translate(-10px, -10px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+  transition: 0.3s;
+}
+.searchBtn:hover {
+  box-shadow: 0 0 black;
+  transform: translate(0);
+}
+/*games*/
+#bigMFeatPBtn[style="color:#fff !important;"] {
+  font-size: 0px;
+}
+#bigMFeatPBtn[style="color:#fff !important;"]:before {
+  content: "Play Now";
+  font-size: 20px;
+  color: black !important;
+}
+.biMFeatInfB {
+  color: var(--black) !important;
+  border: 4px solid var(--black);
+  background-color: var(--white);
+  transform: translate(-10px, -10px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black), 6px 6px var(--black),
+    7px 7px var(--black), 8px 8px var(--black), 9px 9px var(--black),
+    10px 10px var(--black);
+}
+.biMFeatInfB:hover {
+  border: 4px solid var(--black) !important;
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+
+/*challenge*/
+
+.challHeadrT {
+  text-shadow: 0 0 0px #000;
+  color: var(--black) !important;
+}
+.challHeadrImg {
+  filter: drop-shadow(4px 4px var(--black)) drop-shadow(-4px -4px var(--black));
+}
+.challHeadrI {
+  border: 4px solid var(--black);
+}
+.challHeadrS {
+  color: var(--black) !important;
+  text-shadow: 0 0 0px #000;
+  background: var(--trans);
+}
+.challHeadrS span {
+  color: var(--black) !important;
+}
+.chalCard,
+.challCrdMsg {
+  background: var(--trans);
+  border: 4px solid var(--black);
+}
+
+.chalImgC {
+  filter: drop-shadow(4px 4px var(--black)) drop-shadow(-4px -4px var(--black));
+  background-color: var(--trans);
+  border: 0;
+}
+.material-icons[style="font-size:110px;color:#38cd3a;"] {
+  color: var(--white) !important;
+}
+.chalXPBar {
+  border: 4px solid var(--black);
+  background-color: var(--trans);
+  padding: 0;
+  border-radius: 0px;
+}
+.chalXPBarC {
+  background: var(--black);
+  height: 100%;
+  font-size: 16px;
+  border-radius: 0px;
+}
+.chalXPVal {
+  color: var(--white) !important;
+}
+.chalRews {
+  background: var(--trans);
+  border: 0;
+}
+
+.challMapCrd {
+  border: 3px solid var(--black);
+  transition: 0.1s;
+}
+.challMapCrd:hover {
+  transform: translate(-10px, -10px);
+  filter: brightness(1);
+  box-shadow: 10px 10px var(--black);
+}
+.challMapName {
+  color: var(--white) !important;
+}
+
+/*shop*/
+
+.shopCard {
+  border: 4px solid var(--black) !important;
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+  transition: 0.2s;
+  text-shadow: 0 0 black !important;
+}
+.shopCard:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+.spinValH {
+  color: var(--black) !important;
+  text-shadow: 0 0 black;
+}
+.setBodH[style="padding-top:15px"] div {
+  color: var(--black) !important;
+}
+#storeList {
+  overflow-x: initial;
+}
+
+.spinVal {
+  color: var(--white) !important;
+  background-color: #ffffffad !important;
+}
+.purchKRInfoH {
+  width: 422px;
+  height: 140px;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+.purchKRInfoH div {
+  color: var(--black) !important;
+}
+
+.smlInput {
+  border: 4px solid var(--black);
+  background-color: var(--white);
+  color: var(--black) !important;
+  transition: 0.2s;
+}
+.smlInput:focus {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+.smlInput::placeholder {
+  color: var(--black);
+}
+.smlInput::placeholder:focus {
+  color: var(--black);
+}
+.creatorCodeBtn {
+  background-color: var(--white) !important;
+  border: 4px solid var(--black);
+  transform: translate(-5px, -5px);
+  box-shadow: 1px 1px var(--black), 2px 2px var(--black), 3px 3px var(--black),
+    4px 4px var(--black), 5px 5px var(--black);
+
+  transition: 0.2s;
+}
+.creatorCodeBtn:hover {
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+
+/*kicked*/
+
+#instructionsUpdate {
+  color: var(--black) !important;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+#instructionsUpdate div {
+  color: var(--black) !important;
+}
+.chalRewSkn {
+  background: var(--trans);
+  border: 2px solid var(--black);
+}
+
+/* cusromize*/
+#menuWindow[style="overflow-y: auto; width: 810px;"] {
+  transform: initial;
+  max-height: 100% !important;
+  height: 100% !important;
+  left: 0px;
+  top: 0;
+}
+#selectorContainer {
+  height: 100%;
+  background-color: var(--trans);
+}
+.selectorItem {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 20%;
+  background-color: var(--white);
+  border: 4px solid var(--black) !important;
+  align-items: center;
+  left: 20px;
+  transform: translate(7px, -7px);
+  box-shadow: -1px 1px var(--black), -2px 2px var(--black),
+    -3px 3px var(--black), -4px 4px var(--black), -5px 5px var(--black),
+    -6px 6px var(--black), -7px 7px var(--black);
+}
+.selectorItem:hover {
+  background-color: initial;
+  transform: translate(0);
+  box-shadow: 0 0 black;
+}
+.selectorLabel {
+  position: initial;
+}
+.classCard {
+  text-shadow: 0 0 black;
+  filter: drop-shadow(0 0 0rem #000000);
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  width: 174px;
+  transition: 0.2s;
+}
+.classCard:hover {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+.classWeap {
+  opacity: 0;
+}
+.classXPBar {
+  display: none;
+}
+#loadoutName,
+#itemSearch,
+#rawMapData {
+  background-color: var(--white) !important;
+  border: 4px solid var(--black) !important;
+  transition: 0.5s;
+}
+#loadoutName:focus,
+#itemSearch:focus,
+#rawMapData:focus {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+
+#loadoutSelect {
+  background-color: var(--white) !important;
+  border: 4px solid var(--black) !important;
+}
+
+.loadoutBtn {
+  border: 4px solid var(--black);
+  background-color: var(--white);
+  transition: 0.2s;
+}
+.loadoutBtn:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+.custContainer {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  box-shadow: inset 0 0 black;
+  transform: translate(0);
+  width: 95% !important;
+  opacity: 1;
+  transition: 0.2s;
+}
+.contCanSelect:hover,
+.skinCard:hover {
+  background-color: initial;
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+#itemSearchH {
+  background-color: var(--trans);
+}
+#menuWindow[style="overflow-y: hidden; width: 877px;"] {
+  transform: initial;
+  max-height: 100% !important;
+  height: 100% !important;
+  left: 0px;
+  top: 0;
+}
+#skinList {
+  overflow-y: initial !important;
+}
+.custBack {
+  background: var(--white);
+  border: 2px solid var(--black);
+}
+.itemOwn,
+.itemSea {
+  opacity: 0;
+}
+.skinCard {
+  transition: 0.2s;
+}
+
+/*sub menu*/
+/**host*/
+.serverHostOp {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border: 6px solid var(--black);
+  text-shadow: 0 0 black;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px var(--black), -2px 2px var(--black),
+    -3px 3px var(--black), -4px 4px var(--black), -5px 5px var(--black),
+    -6px 6px var(--black), -7px 7px var(--black), -8px 8px var(--black),
+    -9px 9px var(--black), -10px 10px var(--black);
+  background: var(--white) !important;
+  transition: 0.2s;
+}
+.serverHostOp:hover {
+  transform: translate(0);
+  box-shadow: 0 0 black;
+  opacity: 1;
+}
+.hostHeader {
+  border-bottom: 0px solid #989898;
+  box-shadow: 0 0 black;
+  background-color: var(--trans);
+}
+
+#hostCMapPickr {
+  border: 4px solid var(--black);
+  background: var(--white) !important;
+}
+#hostCMapPickT {
+  text-shadow: 0 0 black;
+}
+.hostTb0 .settNameSmall {
+  color: var(--black) !important;
+}
+.hostMap {
+  border: 3px solid var(--black);
+  transition: 0.2s;
+}
+.hostMap:hover {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px var(--black);
+}
+.hostMapName {
+  background: var(--white);
+}
+#stickyHostH {
+  background-color: var(--trans);
+  border-top: 0px solid #989898;
+  box-shadow: 0 0 0 #000;
+  margin-bottom: -40px;
+}
+#mpSrch {
+  background-color: rgb(255 255 255);
+}
+
+/*sever*/
+
+.serverHeader,
+.optCheck {
+  background-color: var(--trans);
+}
+
+#serverSearch {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  transform: transform(20px, 20px);
+  transition: 0.5s;
+}
+#serverSearch::placeholder,
+#serverSearch {
+  color: var(--black) !important;
+}
+
+#serverSearch:focus {
+  background-color: var(--black);
+  border: 4px solid var(--black);
+  height: 100%;
+  padding: 8px 0px 8px 20px;
+}
+#serverSearch:focus::placeholder {
+  color: white !important;
+}
+
+.slide {
+  border: 15px solid var(--trans);
+}
+.slideName,
+.slidePlayers {
+  color: var(--white) !important;
+  text-shadow: 0 0 black;
+}
+.purejscarousel-btn {
+  background-color: var(--white) !important;
+}
+
+#hideFull span {
+  color: var(--black) !important;
+}
+#hostMenuBtn {
+  background-color: var(--trans);
+}
+#serverHolder span[style="float:right;color:rgba(255,255,255,0.9)"],
+#serverHolder span[style="color:rgba(255,255,255,0.6)"] {
+  color: var(--black) !important;
+}
+.quickJoin {
+  border: 4px solid var(--black);
+}
+.quickJoin:hover {
+  transform: initial;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px var(--black);
+}
+
+/*hud*/
+
+/*health*/
+#maxHP,
+#hudClassIcon,
+#teamName,
+#ammoIcon,
+#timerIcon,
+.xpEndBarV {
+  display: none !important;
+}
+
+#uiBase.onGame #chatHolder {
+  left: 20px;
+  bottom: 200px;
+}
+#bottomLeftHolder {
+  background-color: var(--white);
+  padding: 10px;
+  border: 4px solid var(--black);
+  border-radius: 5px;
+}
+
+#healthValueHolder {
+  background-color: transparent;
+  padding: 0 !important;
+}
+#healthValue {
+  color: var(--black);
+  font-size: 50px;
+}
+#challIcon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0);
+}
+
+.healthBarSeg {
+  width: -webkit-fill-available;
+  margin-right: -1px;
+  border-radius: 0;
+}
+
+.hpBSeg {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: var(--black) !important;
+}
+#healthBar {
+  display: inline-flex;
+  position: relative;
+  width: 300px;
+  height: 30px;
+  z-index: -1;
+  outline: 4px solid black;
+}
+
+.healthBarSeg {
+  width: -webkit-fill-available;
+  margin-right: -1px;
+}
+
+/*ammo*/
+#ammoDisplay {
+  display: inline-block;
+  padding: 0px;
+  font-size: 55px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  height: max-content;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/450px-Black_colour.jpg);
+  border: 4px solid var(--black);
+  width: 200px;
+}
+
+.UIB {
+  padding: 0;
+  background-color: var(--white);
+}
+
+#ammoVal,
+#ammoMax {
+  color: var(--black);
+}
+
+/*weapon*/
+/* hud main */
+.weapKey {
+  display: none;
+}
+.weapIcon {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  bottom: -1%;
+  opacity: 0 !important;
+  transition-duration: 0.25s;
+  filter: brightness(100) drop-shadow(4px 4px var(--black))
+    drop-shadow(-4px -4px var(--black));
+}
+.weapIcon[style="opacity: 1;"] {
+  opacity: 1 !important;
+}
+.weapIcon[style="opacity: 1; margin-right: 25px;"] {
+  opacity: 1 !important;
+}
+.weapIcon[style="opacity: 0.7;"] {
+  transform: translate(-50%, -50%) scale(1);
+}
+.weapIcon[style="opacity: 0.7; margin-right: 25px;"] {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*timer*/
+#timerDisplay {
+  text-align: center;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+
+#timerVal {
+  color: var(--black);
+  font-size: 45px;
+}
+
+#pingText:after {
+  content: "Ping";
+  margin-left: 5px;
+  color: var(--white);
+}
+
+/*count*/
+#topRight {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  width: max-content !important;
+}
+.topRightCounters {
+  width: max-content !important;
+}
+#leaderDisplay {
+  background-color: var(--white);
+}
+.leaderItem div,
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal {
+  color: var(--black);
+}
+.countIcon {
+  background-color: var(--trans);
+}
+
+#killsVal:after {
+  content: "K";
+  margin-left: 2px;
+}
+
+#deathsVal:after {
+  content: "D";
+  margin-left: 2px;
+}
+#streakVal:after {
+  content: "Stk";
+  margin-left: 2px;
+}
+.leaderNameM span {
+    color: var(--black) !important;
+}
+/*end*/
+.teamTotals {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+.teamTotalN0,
+.crLabel,
+.crVal,
+.teamTotalN1,
+.teamTotalScore,
+.matchVoteMap,
+.matchVoteMode,
+.matchVoteTotal,
+.tabHeader,
+.endTitle,
+.fundsVal,
+.xpLvl,
+th,
+tr td {
+  color: var(--black) !important;
+}
+#teamTotal0 {
+  box-shadow: 5px 5px var(--black);
+}
+#teamTotal1 {
+  box-shadow: -5px 5px var(--black);
+}
+#endTimer {
+  font-style: normal;
+}
+.matchVote {
+  background: var(--white);
+  border: 4px solid var(--black);
+  text-shadow: 0 0 black;
+  transition: 0.2s;
+}
+.matchVote:hover {
+  box-shadow: 5px 5px var(--black);
+  transform: translate(-5px, -5px);
+}
+.matchVoteThumb {
+  opacity: 0;
+}
+.matchVoteThumb:hover {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.endCard {
+  border: 4px solid var(--black);
+  background-color: var(--white);
+}
+#tabHolder,
+#endTable {
+  background-color: var(--trans);
+}
+.tabHeader.selected,
+.tabHeader:hover {
+  border-bottom: 0px solid var(--yellow);
+}
+.tabHeader {
+  transition: 0.2s;
+}
+.tabHeader:hover {
+  border: 3px solid var(--black);
+  box-shadow: 5px 5px;
+  transform: translate(-5px, -5px);
+}
+
+.gfSection,
+.endSection {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+}
+
+element.style {
+}
+.crStat,
+#kdLayout {
+  text-align: center;
+  color: var(--black) !important;
+  background-color: var(--trans);
+  border: 4px solid var(--black);
+}
+
+.xpEndBar {
+  background-color: var(--trans);
+  border: 4px solid var(--black);
+  padding: 0;
+}
+.xpEndBarB {
+  margin-left: -2px;
+  background: var(--black);
+}
+.fundsVal span {
+  color: var(--black) !important;
+}
+
+
+/*trade*/
+
+.tListN.inv {
+    background-color: var(--trans);
+}
+.tItemHolder {
+    background-color: var(--white);
+}
+
+#tradeChatHolder {
+    width: 220px;
+}
+#tradeChatInput {
+    color: var(--black);
+    background-color: var(--white);
+    border: 4px solid var(--black);
+    transition: .2s
+}
+#tradeChatInput::placeholder{
+    color: var(--black) !important;
+}
+#tradeChatInput:focus{
+    background-color: var(--black);
+    padding-left:20px;
+    color: var(--white)
+}
+#tradeChatInput::placeholder:focus{
+    color: var(--white) !important;
+}
+
+.tradeChatItem {
+    color: var(--black);
+    background-color: var(--white);
+    border:3px solid var(--black)
+}
+
+/*reload*/
+#reloadMsg {
+  font-size: 0px;
+  bottom: 70px;
+  border: 0;
+  background-color: var(--trans);
+}
+
+#reloadMsg:before{
+  content: 'warning';
+  font-family: material-icons;
+  font-size: 50px;
+}
+
+
+/*update*/
+.mapListItem .mapActionOvrl:hover {
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+.mapActionB span{
+    color:var(--white) !important
+}
+
+
+#modDropper {
+    background-color: var(--white);
+    border: 4px solid var(--black);   
+}
+#modDropper p {
+    color: var(--black);
+
+}
+.shopCard[onclick="buyPremium(0)"],
+.shopCard[onclick="buyPremium(1)"],
+.shopCard[onclick="buyPremium(2)"],
+.shopCard[onclick="buyPremium(3)"]{
+  background: var(--white) !important;
+  
+}
+.shopCard[onclick="buyPremium(0)"] .spinVal,
+.shopCard[onclick="buyPremium(1)"] .spinVal,
+.shopCard[onclick="buyPremium(2)"] .spinVal,
+.shopCard[onclick="buyPremium(3)"] .spinVal,
+.shopCard[onclick="buyPremium(0)"] .spinVal span,
+.shopCard[onclick="buyPremium(1)"] .spinVal span,
+.shopCard[onclick="buyPremium(2)"] .spinVal span,
+.shopCard[onclick="buyPremium(3)"] .spinVal span{
+  color: var(--black) !important;
+}
+
+.setBodH[style="padding-top:10px;padding-bottom:10px;"] span[style="color:#fff"],
+#premTime{
+  color: var(--black) !important;
+}
+
+#bigMFeatName[style="top:40px;text-shadow: 0 0 10px black;"]{
+  text-shadow: 0 0 black !important
+}
+
+.crftRcpeCrd {
+    position: relative;
+    background: var(--white);
+}
+
+
+.craftRcIcn {
+    display: inline-block;
+    height: 194px;
+    width: 194px;
+    background: var(--trans);
+    background-size: 80%;
+    border: 4px solid var(--black);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.crftTim {
+    border: 4px solid var(--black);
+    color: var(--black)!important;
+    background: var(--white);
+}
+.endTableN span,
+.newLeaderItem,
+.newLeaderCounter,
+.newLeaderNameM,
+.newLeaderNameM span,
+.newLeaderNameF {
+  color: var(--black) !important
+}
+
+.newLeaderContainer {
+    text-align: left;
+    color: var(--black) !important;
+    background-color: var(--white);
+    border: 4px solid var(--black)
+}
+.pListName a{
+    color: var(--black)
+}
+.mapActionB span{
+	color: var(--white) !important
+}
+.newLeaderTeam {
+    color: var(--black);
+    background-color: var(--trans);
+}
+.chalRewV,
+.chalRewV span,
+.imageListType{
+    color: var(--black) !important
+}
+.openCollection{
+    background: var(--black) !important;
+    color: var(--white) !important
+}
+
+#imagePop {
+    background-color: var(--white);    
+    box-shadow: 0 0 black;
+  border: 4px solid var(--black)
+
+}
+.imageListHeader {
+     
+    color: var(--black);
+    border-bottom: 0px solid #989898;
+    background-color: var(--trans);
+    box-shadow: 0 0 black;
+
+}
+.imageActionB span {
+    color: var(--white) !important
+}
+.imageListName{
+    background: var(--white);
+    border: 0 !important;
+    color: var(--black);
+}
+#imagesTabLayout{
+  background: var(--trans)
+}
+.tabAIMG {
+    cursor: default;
+    border-bottom: 0px solid rgba(255,255,255,.7);
+}
+.imageTab {
+    background-color: var(--trans);
+    color: var(--black);
+}
+.imageTab:hover {
+    border-bottom: 0px solid rgba(255,255,255,.3);
+}
+.imageListAdd {
+    background-color: var(--black)!important;
+}

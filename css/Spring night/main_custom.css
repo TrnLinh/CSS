@@ -1,0 +1,30 @@
+/* a small css made by TrnLinh#7349 */
+
+/*pls don't change anything bellow */
+@import url(https://trnlinh.github.io/css/css/Spring%20night/spring%20night.css);
+/*pls don't change anything above */
+
+:root {
+    --main: #ff9f9f;
+    --ascent: #000000fa;
+    --trans: transparent;
+    --link: #ffffff;
+    --profile: url(https://cdn.discordapp.com/attachments/779918191929327639/932856568972734494/anime.jpg);
+}
+
+
+* {
+    font-family: 'Shizuru', cursive;
+}
+
+
+/*
+This css was made by TrnLinh
+If you want to make an update or fix issues please contact me:
+discord: TrnLinh#7349
+KrunkerIgn: hoanglinh0109
+
+Thank Abyy#1705 for this comment lol 
+*/
+
+/*feel free to edit anything*/
