@@ -828,7 +828,7 @@ div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"],
     line-height: initial;
     display: flex;
     align-items: center;
-    font-size: 35px !important;
+    font-size: 25px !important;
 }
 
 .button.small:hover {
