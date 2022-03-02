@@ -347,7 +347,7 @@ div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"],
 #menuWindow[style="overflow-y: auto; width: 1280px;"] .setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:1004px;margin-left:15px;margin-top:0px;"] {
     width: 90% !important;
     background: var(--trans);
-    grid-column: 5/8;
+    grid-column: 6/9;
     grid-row: 2/4;
     margin-left: 0 !important;
     margin-bottom: 0;
