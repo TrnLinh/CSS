@@ -405,7 +405,7 @@ div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"],
     text-align: left;
     display: inline-block;
     margin-top: 45px;
-    padding: 20px;
+    padding: 25px;
     padding-left: 30px;
     border-radius: 4px;
     background-color: var(--ascent);
@@ -418,7 +418,7 @@ div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"],
 .pSt strong {
     color: var(--link) !important;
     margin-top: 0px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /*log out*/
