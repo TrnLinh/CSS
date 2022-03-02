@@ -373,7 +373,7 @@ div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"],
     border: 3px solid var(--main);
     padding: 0;
     grid-row: 3/5;
-    grid-column: 5/8;
+    grid-column: 6/9;
     width: calc(100% - 45px);
     display: grid;
     margin-left: 20px;
