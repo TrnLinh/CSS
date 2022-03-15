@@ -1,8 +1,9 @@
 :root {
-  --black: #000000;
-  --white: white;
+  --black: #fff;
+  --white: #000;
   --trans: transparent;
   --link: #3f3e3e;
+  --ava: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
 }
 
 * {
@@ -49,6 +50,7 @@ a {
   margin-bottom: 2px;
   width: 100%;
   text-align: left;
+  color: var(--black)
 }
 .lC-cube,
 .lC-cube * {
@@ -74,7 +76,7 @@ a {
 
 .lC-f {
   animation: loader 10s ease forwards;
-  background: black;
+  background: var(--black);
   color: #fff;
   padding: 0px;
   margin: 0;
@@ -197,6 +199,9 @@ a {
   left: 0px;
   top: 0;
 }
+#menuWindow[style="overflow-y: auto; width: 1280px;"]  .setHed{
+  border: 0;
+}
 #menuWindow.dark div {
   color: var(--black);
 }
@@ -237,7 +242,7 @@ a {
   border: 4px solid var(--black) !important;
   width: 300px;
   height: 300px;
-  background: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
+  background: var(--ava);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -359,7 +364,7 @@ input:-internal-autofill-selected {
   border: 4px solid var(--black);
 }
 #signedInHeaderBar div {
-  color: black;
+  color: var(--black);
 }
 .headerBar {
   align-items: flex-end;
@@ -380,7 +385,7 @@ input:-internal-autofill-selected {
   height: 150px;
   display: block;
   background-size: cover;
-  background-image: url(https://animesher.com/orig/1/111/1110/11104/animesher.com_short-hair-pencil-anime-girl-1110476.jpg);
+  background-image: var(--ava);
   border-radius: 50%;
   border: 2px solid var(--black);
 }
@@ -455,7 +460,7 @@ input:-internal-autofill-selected {
 #menuPingDisplay,
 #menuFPSDisplay,
 #menuPingText {
-  color: #000;
+  color: var(--black);
 }
 /*main bar*/
 
