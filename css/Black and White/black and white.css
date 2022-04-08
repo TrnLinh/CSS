@@ -408,7 +408,7 @@ input:-internal-autofill-selected {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.junkInfo {
+.mainJunkInfo {
   margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
